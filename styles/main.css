@@ -12,9 +12,10 @@ body {
   width: 100%;
   background-color: #40276e;
   color: #fff;
-  font-family: Robato;
+  font-family: Roboto;
   font-size: 20px;
   text-align: center;
+  border-bottom: 2px solid #5e37a5;
 }
 
 .current {
@@ -31,6 +32,10 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+nav {
+  padding: 1% 1% 1% 0%;
 }
 
 .title {
@@ -51,10 +56,12 @@ a {
   align-items: center;
   text-align: center;
   border-bottom: 1px solid #5fc6cb;
-  margin-top: 20px;
-  margin-bottom: 32px;
-  /*margin-left: 25%;*/
-  padding-bottom: 40px;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  margin-left: 0%;
+  margin-right: 0%;
+  padding-bottom: 1.5%;
+  padding-right: 0%;
 }
 
 a:focus {
@@ -63,6 +70,34 @@ a:focus {
 
 a:hover {
   background-color: #e12c4a;
+}
+
+li:hover {
+  background-color: #e12c4a;
+}
+
+.leftnav {
+  text-align: left;
+  padding-left: 5%;
+  margin: 0;
+}
+
+.sidenav {
+  position: absolute;
+  height: 100%;
+  display: block;
+  background-color: #40276e;
+  color: #fff;
+  padding-left: 0%;
+  padding-right: 3%;
+  padding-top: 2%;
+  margin: 0;
+}
+
+@media (max-width: 540px) {
+  .sidenav {
+    display: none;
+  }
 }
 /*
 a.active {
