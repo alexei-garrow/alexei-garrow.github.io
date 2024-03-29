@@ -34,10 +34,10 @@ a {
 }
 
 .title {
-  border-left: 2px solid #e12c4a;
   display: flex;
-  flex-direction: row;
+  border-left: 2px solid #e12c4a;
   justify-content: center;
+  align-items: center;
   text-align: center;
   font-size: 32px;
   line-height: 1.5;
@@ -46,13 +46,14 @@ a {
 }
 
 .titlewrapper {
-  align-items: center;
-  border-bottom: 1px solid #5fc6cb;
   display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  border-bottom: 1px solid #5fc6cb;
   margin-top: 20px;
   margin-bottom: 32px;
-  margin-left: 25%;
+  /*margin-left: 25%;*/
   padding-bottom: 40px;
 }
 
