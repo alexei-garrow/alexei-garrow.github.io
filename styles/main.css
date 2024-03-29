@@ -26,6 +26,12 @@ a {
   color: inherit; /* this took me waaaaay to long to find, had to use another students blog to find the answer..*/
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 /*
 a.active {
   background-color: #fff;
