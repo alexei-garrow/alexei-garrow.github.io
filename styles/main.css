@@ -32,6 +32,37 @@ a {
   justify-content: center;
   align-items: center;
 }
+
+.title {
+  border-left: 2px solid #e12c4a;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  font-size: 32px;
+  line-height: 1.5;
+  margin-top: 0;
+  padding: 0 16px;
+}
+
+.titlewrapper {
+  align-items: center;
+  border-bottom: 1px solid #5fc6cb;
+  display: flex;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 32px;
+  margin-left: 25%;
+  padding-bottom: 40px;
+}
+
+a:focus {
+  background-color: #e12c4a;
+}
+
+a:hover {
+  background-color: #e12c4a;
+}
 /*
 a.active {
   background-color: #fff;
