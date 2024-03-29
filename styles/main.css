@@ -85,13 +85,54 @@ li:hover {
 }
 
 .topnavheader {
-  font-size 28px;
+  font-size: 28px;
   font-weight: 500;
 }
 
 .thetopnavheader {
   font-size: 38px;
   font-weight: 500;
+}
+
+table,
+table tr {
+  padding: 0;
+}
+
+th {
+  display: table-cell;
+  vertical-align: inherit;
+  font-weight: bold;
+  text-align: internal center;
+  unicode-bidi: isolate;
+}
+
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  unicode-bidi: isolate;
+  border-color: inherit;
+}
+
+thead {
+  display: table-header-group;
+  vertical-align: middle;
+  unicode-bidi: isolate;
+  border-color: inherit;
+}
+
+table {
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
+  display: table;
+  border-collapse: separate;
+  box-sizing: border-box;
+  text-indent: initial;
+  unicode-bidi: isolate;
+  border-spacing: 2px;
+  border-color: gray;
+  color: #3b454e;
 }
 
 .sidenav {
@@ -115,13 +156,13 @@ li:hover {
 @media (max-width: 1020px) {
   .main {
     display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
-@media (max-width: 1020px){
+@media (max-width: 1020px) {
   .titlewrapper {
     display: flex;
     justify-content: center;
