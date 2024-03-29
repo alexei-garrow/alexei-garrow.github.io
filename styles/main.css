@@ -16,11 +16,12 @@ body {
 }
 
 a {
- text-decoration: none; 
- color: inherit;    // this took me ages omg! Had to find it on another students blog
+  text-decoration: none;
+  color: inherit; /* this took me waaaaay to long to find, had to use another students blog to find the answer..*/
 }
 
-
-//a.active {
+/*
+a.active {
   background-color: #fff;
 }
+ */
