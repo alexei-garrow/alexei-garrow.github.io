@@ -99,6 +99,10 @@ table tr {
   padding: 0;
 }
 
+td {
+  border: solid 1px gray;
+}
+
 th {
   display: table-cell;
   vertical-align: inherit;
@@ -126,13 +130,12 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
   display: table;
-  border-collapse: separate;
-  box-sizing: border-box;
+  /*border-collapse: separate;*/
+  /*box-sizing: border-box;*/
   text-indent: initial;
   unicode-bidi: isolate;
-  border-spacing: 2px;
+  /*border-spacing: 0;*/
   border-color: gray;
-  color: #3b454e;
 }
 
 .sidenav {
