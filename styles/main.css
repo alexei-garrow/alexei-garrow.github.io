@@ -13,6 +13,12 @@ body {
   background-color: #40276e;
   color: #fff;
   font-family: Robato;
+  font-size: 20px;
+  text-align: center;
+}
+
+.current {
+  text-decoration: underline;
 }
 
 a {
