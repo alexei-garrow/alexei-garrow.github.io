@@ -66,6 +66,11 @@ nav {
   padding-right: 0%;
 }
 
+.red {
+  color: red;
+  font-family: roboto;
+  font-weight: 500;
+}
 a:focus {
   background-color: #e12c4a;
 }
@@ -109,20 +114,21 @@ th {
   font-weight: bold;
   text-align: internal center;
   unicode-bidi: isolate;
+  border-color: gray;
 }
 
 tr {
   display: table-row;
   vertical-align: inherit;
   unicode-bidi: isolate;
-  border-color: inherit;
+  border-color: gray;
 }
 
 thead {
   display: table-header-group;
   vertical-align: middle;
   unicode-bidi: isolate;
-  border-color: inherit;
+  border-color: gray;
 }
 
 table {
@@ -150,7 +156,7 @@ table {
   margin: 0;
 }
 
-@media (max-width: 540px) {
+@media (max-width: 1020px) {
   .sidenav {
     display: none;
   }
@@ -162,6 +168,7 @@ table {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /*text-align: center;*/
   }
 }
 
