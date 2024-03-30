@@ -66,6 +66,10 @@ nav {
   padding-right: 0%;
 }
 
+.font {
+  font-family: Roboto;
+}
+
 .red {
   color: red;
   font-family: roboto;
@@ -88,6 +92,12 @@ li:hover {
   padding-left: 5%;
   margin: 0;
 }
+
+/*.heading2 {
+  font-size: ;
+  font-weight: 0;
+}
+*/
 
 .topnavheader {
   font-size: 28px;
