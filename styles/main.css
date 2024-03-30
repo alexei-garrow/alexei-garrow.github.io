@@ -36,6 +36,17 @@ a {
   padding-right: 30%;
 }
 
+.main2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0%;
+  padding-right: 0%;
+  padding-top: 0%;
+  padding-bottom: 0%;
+}
+
 nav {
   padding: 1% 1% 1% 0%;
 }
@@ -174,6 +185,16 @@ table {
 
 @media (max-width: 1020px) {
   .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*text-align: center;*/
+  }
+}
+
+@media (max-width: 1020px) {
+  .main2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
