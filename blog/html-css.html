@@ -15,33 +15,95 @@
     </header>
     <div class="main3">
       <div class="item1">
-        <h1>What is the difference between Margin, Border and Padding?</h1>
+        <h1 class="center">
+          What is the difference between Margin, Border and Padding?
+        </h1>
         <p>
-          People including myself get confused, because padding and margin both
-          involve space around the element. Padding is the space between the
-          element and it's border. Margin is the space between the outside and
-          the border, normally the side of the page for example. Thankfully some
-          smart people came up with a way to illustrate this!
+          People including myself get confused with this stuff, mainly because
+          padding and margin both involve space around the element. Padding is
+          the space between the element and it's border. Margin is the space
+          between the outside and the border. So what does that actually mean?
+          Thankfully some smart people came up with a way to illustrate this!
         </p>
       </div>
       <div class="item2">
         <h2 class="center">Introducing the Box Model!</h2>
-        <img src="/img/boxmodel.png" alt="A picture of a box model" />
+        <img
+          class="responsive-img"
+          src="/img/boxmodel.png"
+          alt="A picture of a box model"
+        />
       </div>
       <div class="item3">
-        <p>
+        <p class="center">
           As you can see the
-          <a class="underline" href="https://web.dev/learn/css/box-model"
+          <a
+            class="underline"
+            target=".black"
+            href="https://web.dev/learn/css/box-model"
             ><strong>box model</strong></a
           >
           is a picture representing all the things we are discussing.
         </p>
         <p>
           The content in the box model could be anything from a div to your
-          paragraph.
+          paragraph. As you can now see the padding is illustrated as the space
+          between the element and it's border. It should be noted that padding,
+          border and margin are 4 directional, and you can use any combination
+          you'd like.
+        </p>
+      </div>
+      <div class="item4">
+        <p>
+          So how can we use these things?! With all 3 of these CSS options we
+          can use these 4 directives.
+        </p>
+        <ul>
+          <li>Top</li>
+          <li>Right</li>
+          <li>Bottom</li>
+          <li>Left</li>
+        </ul>
+        <p>
+          They all have their own syntax for this as this one's a little easier
+          to see ( im my opinion ). let's start with the border!
         </p>
       </div>
       <div class="box1">
+        <p>Hey</p>
+      </div>
+      <div class="item5">
+        <p>
+          Here we have a box with the eloquent text "Hey". We've given it a
+          background color so we can see it's full size, and we've given it a
+          red border on the right. To do this in CSS we need to assign it a
+          class or id, and then in that class or id add the code: 'border-right:
+          5px red solid;'. To break this down we have the target so the border
+          then the side in this case -right, we then specify the size and the
+          color, finally the type of border, in this case the solid border.
+        </p>
+        <ul>
+          <li>border-right: 5px red solid;</li>
+          <li></li>
+        </ul>
+      </div>
+      <div class="item6">
+        <p>So what about padding?</p>
+        <p>Let's bring back our "Hey" example and take a look!</p>
+      </div>
+      <div class="box1">
+        <p>Hey</p>
+      </div>
+      <div class="item6">
+        <p>Now let's change the left padding by 20%</p>
+      </div>
+      <div class="box2">
+        <p>Hey</p>
+      </div>
+      <div class="item6">
+        <p>Wait, what happened here?! Let's try 10px instead!</p>
+      </div>
+      <div class="box3">
         <p>Hey</p>
       </div>
     </div>
