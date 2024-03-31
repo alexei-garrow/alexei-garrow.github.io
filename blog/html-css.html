@@ -22,8 +22,11 @@
           People including myself get confused with this stuff, mainly because
           padding and margin both involve space around the element. Padding is
           the space between the element and it's border. Margin is the space
-          between the outside and the border. So what does that actually mean?
-          Thankfully some smart people came up with a way to illustrate this!
+          between the outside and the border.
+        </p>
+        <p>
+          So what does that actually mean? Thankfully some smart people came up
+          with a way to illustrate this!
         </p>
       </div>
       <div class="item2">
@@ -39,18 +42,20 @@
           As you can see the
           <a
             class="underline"
-            target=".black"
+            target="_blank"
             href="https://web.dev/learn/css/box-model"
             ><strong>box model</strong></a
           >
           is a picture representing all the things we are discussing.
         </p>
-        <p>
+        <p class="center">
           The content in the box model could be anything from a div to your
-          paragraph. As you can now see the padding is illustrated as the space
-          between the element and it's border. It should be noted that padding,
-          border and margin are 4 directional, and you can use any combination
-          you'd like.
+          paragraph.
+        </p>
+        <p>
+          As you can now see the padding is illustrated as the space between the
+          element and it's border. It should be noted that padding, border and
+          margin are 4 directional, and you can use any combination you'd like.
         </p>
       </div>
       <div class="item4">
@@ -65,8 +70,9 @@
           <li>Left</li>
         </ul>
         <p>
-          They all have their own syntax for this as this one's a little easier
-          to see ( im my opinion ). let's start with the border!
+          They all have their own syntax. For this example we'll use the border
+          first as this one's a little easier to see ( im my opinion ). So let's
+          start with the border!
         </p>
       </div>
       <div class="box1">
@@ -84,28 +90,110 @@
         </p>
         <ul>
           <li>border-right: 5px red solid;</li>
-          <li></li>
         </ul>
       </div>
       <div class="item6">
-        <p>So what about padding?</p>
+        <p class="center">So what about padding?</p>
         <p>Let's bring back our "Hey" example and take a look!</p>
       </div>
       <div class="box1">
         <p>Hey</p>
       </div>
-      <div class="item6">
+      <div class="item5">
         <p>Now let's change the left padding by 20%</p>
+        <ul>
+          <li>padding-left: 20%;</li>
+        </ul>
       </div>
       <div class="box2">
         <p>Hey</p>
       </div>
-      <div class="item6">
+      <div class="item5">
         <p>Wait, what happened here?! Let's try 10px instead!</p>
+        <ul>
+          <li>padding-left: 10px;</li>
+        </ul>
       </div>
       <div class="box3">
         <p>Hey</p>
       </div>
+      <div class="item5">
+        <p>Ah that's better, can you see it? What if we try 100px!</p>
+        <ul>
+          <li>padding-left: 100px;</li>
+        </ul>
+      </div>
+      <div class="box4">
+        <p>Hey</p>
+      </div>
+      <div class="item5">
+        <p>
+          Ok that's a bit much, it even added some Margin!? But you get the idea
+          right?
+        </p>
+        <p>
+          Cool I'm going to set this back to 10px, and now we can play with the
+          margin.
+        </p>
+        <p>
+          In the below example I'm going to stick with the left theme, and add
+          some left margin.
+        </p>
+        <ul>
+          <li>padding-left: 10px;</li>
+          <li>margin-left: 10%;</li>
+        </ul>
+      </div>
+      <div class="box5">
+        <p>Hey</p>
+      </div>
+      <div class="item5">
+        <p>Ok did you notice? What if we bring it in, both sides by 10%!!</p>
+        <ul>
+          <li>margin-left: 10%;</li>
+          <li>margin-right: 10%;</li>
+        </ul>
+      </div>
+      <div class="box6">
+        <p>Hey</p>
+      </div>
+      <div class="item5">
+        <p>
+          Ok did you notice how both sides came in, but balanced out? Meaning it
+          was less on the left than the above example, even though they were the
+          same %?
+        </p>
+        <p>
+          I hope you enjoyed my guide! Please feel free to pm me any feedback!!
+          If you're interested in learning more here are some great resources:
+        </p>
+        <ul>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.youtube.com/watch?v=yfoY53QXEnI"
+              >Youtube</a
+            >
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model"
+              >Doc's</a
+            >
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.w3schools.com/css/css_border.asp"
+              >W3</a
+            >
+          </li>
+        </ul>
+      </div>
+      <footer>
+        <h2 class="underline"><a href="#top">Back to the top!</a></h2>
+      </footer>
     </div>
   </body>
 </html>
