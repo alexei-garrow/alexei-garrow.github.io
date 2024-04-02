@@ -24,7 +24,7 @@ body {
 }
 
 .center {
-  text-align: center;
+  text-align: center !important;
 }
 
 .left {
@@ -76,7 +76,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /*align-items: center;*/
+  align-items: center; /* stops my headings from aligning, but messed up my pictures on template so put back in*/
   text-align: left;
   padding-left: 0%;
   padding-right: 0%;
@@ -227,6 +227,7 @@ a {
   max-width: 100%;
   height: auto;
 }
+
 nav {
   padding: 1% 1% 1% 0%;
 }
