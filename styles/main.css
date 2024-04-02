@@ -31,6 +31,11 @@ body {
   text-align: left !important;
 }
 
+.left2 {
+  width: 80%;
+  text-align: left;
+}
+
 .navtop {
   position: relative;
   top: 0px;
@@ -71,7 +76,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  /*align-items: center;*/
   text-align: left;
   padding-left: 0%;
   padding-right: 0%;
@@ -83,6 +88,15 @@ a {
 }
 
 .main2 h3 {
+  text-align: left;
+  padding: 1% 1% 1% 1%;
+}
+
+.main2 h1 {
+  text-align: center;
+}
+
+.main2 h2 {
   text-align: center;
 }
 
