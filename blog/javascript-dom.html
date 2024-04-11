@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/styles/main.css" rel="stylesheet" type="text/css" />
+    <title>EQ vs IQ</title>
+  </head>
+  <body class="body3">
+    <header class="header2">
+      <nav class="navtop">
+        <h2 class="leftnav"><a href="../index.html">Alexei Garrow</a></h2>
+      </nav>
+    </header>
+    <div class="main2">
+      <div><h1>JavaScript & the DOM</h1></div>
+      <h3>HTML, CSS & JavaScript</h3>
+      <article>
+        <p>
+          <strong>HTML</strong> is short for hyper text markup
+          <a
+            class="hover current"
+            target="_blank"
+            href="https://www.w3schools.com/html/default.asp"
+            >language</a
+          >. In essence what this means is HTML is the skeleton, the bones of
+          the website. In our example below it is the plans, and the literal
+          structure of the spaceship! Though thankfully unlike if we forget to
+          add something to the space ship, it isn't a huge deal with our
+          website, we can just edit the code!
+        </p>
+        <img
+          class="main2 responsive-img"
+          src="/img/uss-plans.jpg"
+          alt="USS Plans"
+        />
+        <p class="main2 small">
+          (https://www.reddit.com/r/Treknobabble/comments/ph4u0l/partial_cutaway_and_deck_plan_of_the_uss/)
+        </p>
+        <p>
+          <strong>CSS</strong> is short for cascading style
+          <a
+            class="hover current"
+            target="_blank"
+            href="https://www.w3schools.com/css/default.asp"
+            >sheets</a
+          >. CSS is more than just the color (colour) or font, CSS is also about
+          positioning where do you want things? In our spaceships case CSS has
+          more to do with the look of the spaceship. Making sure it looks like a
+          USS spaceship could prevent conflicts, therefor 'styling' is
+          incredible important here!
+        </p>
+        <img
+          class="main2 responsive-img"
+          src="/img/2009_liveopscard_discovery.png"
+          alt="a picture of the USS DIscovery"
+        />
+        <p class="main2 small">
+          (https://startrekfleetcommand.com/the-uss-discovery/)
+        </p>
+        <p>
+          <strong>JavaScript</strong>Is widely consider
+          <strong>the</strong> scripting
+          <a
+            class="hover current"
+            target="_blank"
+            href="https://www.w3schools.com/js/default.asp"
+            >language</a
+          >
+          of the web. JavaScript is the interactivity, the programming, the
+          Hyperdrive ( spore drive? ). In our example here, javascript is the
+          functionality it is the lasers, the shields the spaceship itself in
+          action!
+        </p>
+        <!-- <div class="center2" style="width:100%;height:0;padding-bottom:49%;position:relative;"><iframe src="https://giphy.com/embed/2wgWwdQ05dAg64Dil6" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p class="small"><a href="https://giphy.com/gifs/CBSAllAccess-star-trek-2wgWwdQ05dAg64Dil6">(via GIPHY)</a></p>-->
+        <iframe
+          class="main2 responsive-img"
+          src="https://giphy.com/embed/2wgWwdQ05dAg64Dil6"
+          width="480"
+          height="237"
+          frameborder="0"
+          class="giphy-embed"
+          allowfullscreen
+        ></iframe>
+        <p class="main2 small">
+          <a
+            href="https://giphy.com/gifs/CBSAllAccess-star-trek-2wgWwdQ05dAg64Dil6"
+            >(via GIPHY)</a
+          >
+        </p>
+        <p>
+          Obviously these examples are a little on silly side, but I trust you
+          get the idea? One of the better ways I've seen it summerised was in a
+          video we watched earlier in the course. HTML is the builder, CSS the
+          stylist / painter, and JavaScript - the wizzard! JavaScript is the
+          magic that binds it all together.
+        </p>
+        <p>
+          It's important to consider our roles, as we progress into the
+          workforce. We will most likely be junior developers, but what does
+          that mean? Well we will be like the builders, but of the the website
+          rather than a house. We will use all the tools to construct the
+          websites or parts of them we will work on. The magic is not only in
+          JavaScript, but in how we use all these tools, and how everything
+          binds together.
+        </p>
+      </article>
+      <h3 class="center">Control flow</h3>
+      <article>
+        <p>
+          What is control flow? Control flow is a term used to describe the way
+          the programming language is run. In this case, by default JavaScrip (
+          and most other languages ) run from top to bottom, not unlike when
+          reading a book. Control flow is hinted to in it's name, to control the
+          flow. When we think of the standard top to bottom control flow though,
+          this isn't always ideal. Sometimes we need to do multiple things
+          before going to the next thing, just like in real life!
+        </p>
+        <p class="center small">(see below)</p>
+      </article>
+      <h3>Loops in control flow</h3>
+      <article>
+        <p>
+          So what is a loop, and how can we demonstrate control flow with it?
+          Well firstly we need to get something to run through this loop. In
+          this example below I'm going to create an array of ingredients. (I'll
+          explain how that works below)
+        </p>
+        <img
+          class="responsive-img main2"
+          src="/img/let-ingredients-list.png"
+          alt="A list of ingredients"
+        />
+        <p>
+          Here we declare the type of variable it is with the word 'let'. There
+          are 2 main types, let and const (constant). We use const for variables
+          we don't plan on chaning ( we can change things in the array though!)
+          and we use let for a variable we might want to change later.
+        </p>
+        <p>
+          so let and const are the decleration, in this case 'ingredientsList'
+          is the variable ( container for holding things like data). In this
+          container we will store a type of data called an array. Arrays are
+          indexs of data, or arrays of data stored as an index, whatever makes
+          more sense to you. To tell it's an array we can see the [] square
+          brackets.
+        </p>
+        <p>
+          Now that we have our array we need to store some information in it. In
+          this case we need to store a list of ingredients! The way we do this
+          is with the '' we put the word inside like 'food' then if we want more
+          than one ( hint we should or why use an array!?), we can use a comma ,
+          to divide them like so: ['pizza', 'noodles', 'pasta']. We then end the
+          line with a simicolon ;
+        </p>
+        <p>
+          Now that we have our array, we need to loop through it to take all the
+          ingredients out and or check they are there!
+        </p>
+        <img
+          class="responsive-img main2"
+          src="/img/for-ingredients-list.png"
+          alt="an image of a loop"
+        />
+        <p>
+          Ok so what is going on here! First 'for' is the type of loops we then
+          tell it what to do in the () brackets. firstly we say 'let i;'' this
+          is assigning 'i' as the
+          <a
+            class="hover current"
+            href="https://www.google.com/search?q=iterator&oq=iterator&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDEyMjlqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8"
+            >iterator</a
+          >
+          we then tell it to start from 0 time through the loop. We are then
+          giving it a condition, in this case as long as 'i' is less than the
+          ingredientsList.length ( the length of our array) it will keep going.
+          We then make sure to increase the number our iterator is searching
+          through each time it collects data. We do this by assigning 'i' the
+          '++' (increment assignment). This increases the iterator, therefor
+          increasing the number of the index it is searching through.
+        </p>
+        <p>
+          The iterator starts at the first item of our array ' 0 ' yes 0 it
+          starts 0 1 2 3 etc. each time it ++ it goes to the next so 0 loop back
+          then 1 loop back etc, then finishes at the end. Thankfully we assigned
+          the i less than ingredientsList.length, the main advantage of that is
+          not only, not having to remember how long the array is, but also being
+          able to add or remove from it.
+        </p>
+        <p>
+          We can do this with
+          <a
+            class="hover current"
+            target="_blank"
+            href="https://www.w3schools.com/jsref/jsref_push.asp"
+            >push</a
+          >
+          and
+          <a
+            class="hover current"
+            target="_blank"
+            href="https://www.w3schools.com/jsref/jsref_pop.asp"
+            >pop</a
+          >
+          commands.
+        </p>
+      </article>
+      <h3>The DOM</h3>
+      <article>
+        <p>
+          The DOM or document object model, is simply a document that your
+          browser creates. Everything inside this document is an object / node.
+          JavaScript uses the DOM and it's objects etc, to interract with the
+          elements of the page. JavaScript is run in the browser, and this is
+          how it's done. JavaScript is brought into the HTML doc through us
+          linking our .js file, it them uses the DOM to execute the code.
+        </p>
+        <p>
+          If we were to use an example of how or why we'd use the DOM, there are
+          many, from simply changing the style of an element to having an
+          interractive button and or form. JavaScrip can technically change
+          anything on your website.
+        </p>
+      </article>
+      <h3>Arrays & objects</h3>
+      <article>
+        <p>So we know what an array is:</p>
+        <img
+          class="responsive-img main2"
+          src="/img/let-ingredients-list.png"
+          alt="A list of ingredients"
+        />
+        <p>But what about an object?</p>
+        <img class="responsive main2" src="/img/let-ingredients-object.png" />
+        <p>
+          Here we have an object, an object is another variable / container.
+          Inside this object we have a list of ingredients.
+        </p>
+        <p>
+          Now that we can see what they both are, let's talk about the
+          differences in terms of getting data out of them! For startes objects
+          or their properties in this case are group in pairs called the key
+          values pairs or pairings. In this case 'flour:'is the 'key' and its
+          'value' is '200g'.
+        </p>
+        <p>
+          To get the data out of an array you need to either loop through it or
+          pull out a specific index number: console.log(ingredientList[1]); Will
+          print out 'flour' to the console ( rememeber they start from 0).
+        </p>
+        <p>
+          To pull out dats of the object we can use a function or we can use the
+          . calling method ie: console.log(ingredients.water); WIll give us '1
+          litre'
+        </p>
+      </article>
+      <h3>Functions and why we use them</h3>
+      <article>
+        <p>
+          Functions are reuseable sections of code. THey cna be very powerful
+          for basic things like adding numbers together. The main benefit to
+          this is in parameters like function addition(num1,num2) { return num1
+          + num 2; } console.log(addition(1,1)); this will add 1 + 1. The reason
+          this is power is we can do this mutiple times throughout the code, we
+          can call in that same function with a different arguement
+          console.log(addition(200,50)); Without having to rewrite everything!
+        </p>
+        <p>
+          There is something to consider when dealing with functions, and that
+          is when you all them! To show an exaggerated example:
+        </p>
+        <img
+          class="responsive-img"
+          src="/img/cooking-example1.png"
+          alt="a picture of a function with functions inside it"
+        />
+        <p>Now this all looks good?</p>
+        <img
+          class="responsive-img"
+          src="/img/cooking-example2.png"
+          alt="a picture of a function with badly arranged functions inside it"
+        />
+        <p>
+          Wait a second! How do we start cooking without any ingredients? Or
+          plateup before we've even cooked? Though pretty exaggerated, this is
+          something that can happen with functions. Always be aware of when you
+          are calling them!
+        </p>
+      </article>
+      <h2><a class="active current" href="#top">Back to the top!</a></h2>
+    </div>
+  </body>
+</html>

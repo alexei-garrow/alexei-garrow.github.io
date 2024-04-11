@@ -27,6 +27,11 @@ body {
   text-align: center !important;
 }
 
+.center2 {
+  justify-content: center;
+  align-items: center;
+}
+
 .left {
   text-align: left !important;
 }
@@ -226,6 +231,10 @@ a {
 .responsive-img {
   max-width: 100%;
   height: auto;
+}
+
+.small {
+  font-size: small;
 }
 
 nav {
